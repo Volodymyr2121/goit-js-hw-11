@@ -41,6 +41,7 @@ iziToast.show({
         }
         galleryEl.innerHTML = createGalleryMarkUp(ImageData.hits)
         let gallery = new SimpleLightbox('.card a');
+        gallery.refresh();
     })
         
         .catch(error => console.log(error))
